@@ -24,5 +24,8 @@ app.MapControllerRoute(
 
 app.MapFallbackToFile("index.html"); ;
 
+// Serve multiple angular spa from a single core web application RSS
+// https://forums.asp.net/t/2156516.aspx?Serve+multiple+angular+spa+from+a+single+core+web+application
+
 app.Run();
 
