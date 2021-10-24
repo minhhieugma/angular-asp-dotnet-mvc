@@ -19,6 +19,7 @@ A simple Angular SAP + ASP.NET MVC at backend
 - Backend
 
 # Thoughts
+- I purposefully do not put many code comments since I believe that having a good source code structure & best practices helps us avoid tons of redundant comments. 
 - I would have not used Repository to deal with the persistene - JSON file. 
 - I would like to use Entity Framework to work with JSON files and any other types of storage. Fundamentally, EF applies both Repository and UoW patterns already. 
   - We can implement it by ourself 
