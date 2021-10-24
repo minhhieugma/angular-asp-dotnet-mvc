@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Remove="User\" />
+		<None Remove="MediatR" />
+		<None Remove="User\Commands\" />
+		<None Remove="Microsoft.Extensions.Logging.Abstractions" />
+		<None Remove="Pipelines\" />
+		<None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+		<None Remove="User\Queries\" />
+		<None Remove="Exceptions\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="User\" />
+		<Folder Include="User\Commands\" />
+		<Folder Include="Pipelines\" />
+		<Folder Include="User\Queries\" />
+		<Folder Include="Exceptions\" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MediatR" Version="9.0.0" />
+		<PackageReference Include="FluentValidation" Version="10.2.3" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0-rc.2.21480.5" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Persistence.File\Persistence.File.csproj" />
+	</ItemGroup>
+</Project>

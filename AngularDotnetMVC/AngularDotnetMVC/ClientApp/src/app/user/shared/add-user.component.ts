@@ -30,15 +30,17 @@ export class AddUserComponent {
 
     try {
       const result = await this.userService.addUser(user).toPromise()
+      //alert(JSON.stringify(result))
 
       this.userForm.patchValue({
         firstName: '',
         lastName: ''
       });
 
-      alert('User created!')
+      alert(`User ${result.id} created!`)
     } catch (e) {
-      alert(e)
+      debugger
+      alert(JSON.stringify(e.error))
     }
     finally {
       this.processing = false
