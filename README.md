@@ -31,4 +31,3 @@ A simple Angular SAP + ASP.NET MVC at backend
 
 # Contact
 - [Email](mailto:minhhieugma@gmail.com)
-- [Skype](skype:<minhhieuyah>?call)
